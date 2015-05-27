@@ -4,7 +4,8 @@
     "license": "proprietary",
     "require": {
         "bear/package": "~1.0@dev",
-        "bear/aura-router-module": "~1.0"
+        "bear/aura-router-module": "~1.0",
+        "monolog/monolog": "~1.0"
     },
     "require-dev": {
     },
