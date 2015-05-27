@@ -3,7 +3,8 @@
     "description":"n/a",
     "license": "proprietary",
     "require": {
-        "bear/package": "~1.0@dev"
+        "bear/package": "~1.0@dev",
+        "bear/aura-router-module": "~1.0"
     },
     "require-dev": {
     },
