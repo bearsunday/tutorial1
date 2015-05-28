@@ -3,6 +3,8 @@
 namespace MyVendor\Weekday\Module;
 
 use BEAR\Package\PackageModule;
+use BEAR\Resource\ImportApp;
+use BEAR\Resource\Module\ImportAppModule;
 use MyVendor\Weekday\Annotation\BenchMark;
 use MyVendor\Weekday\Interceptor\BenchMarker;
 use Psr\Log\LoggerInterface;
@@ -11,6 +13,7 @@ use Ray\CakeDbModule\CakeDbModule;
 use Ray\Di\AbstractModule;
 use BEAR\Package\Provide\Router\AuraRouterModule;
 use Ray\Di\Scope;
+use BEAR\Package\Context;
 
 class AppModule extends AbstractModule
 {
@@ -38,5 +41,10 @@ class AppModule extends AbstractModule
 
         $dbConfig = 'sqlite:' . dirname(dirname(__DIR__)). '/var/db/post.sqlite3';
         $this->install(new AuraSqlModule($dbConfig));
+
+        $importConfig = [
+            new ImportApp('blog', 'Acme\Blog', 'prod-hal-app') // host, name, context
+        ];
+        $this->override(new ImportAppModule($importConfig , Context::class));
     }
 }
