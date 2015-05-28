@@ -16,7 +16,8 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "MyVendor\\Weekday\\": "src/"
+            "MyVendor\\Weekday\\": "src/",
+            "Acme\\Blog\\": "my-vendor/Acme.Blog/src/"
         }
     },
     "extra": {
