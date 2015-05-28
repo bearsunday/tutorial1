@@ -1,0 +1,22 @@
+{
+    "name": "acme/blog",
+    "description":"n/a",
+    "license": "proprietary",
+    "require": {
+        "bear/package": "~1.0@dev"
+    },
+    "require-dev": {
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Acme\\Blog\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
