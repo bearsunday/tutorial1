@@ -3,6 +3,7 @@
 namespace MyVendor\Weekday\Resource\App;
 
 use BEAR\Resource\ResourceObject;
+use Ray\CakeDbModule\Annotation\Transactional;
 use Ray\CakeDbModule\DatabaseInject;
 
 class Todo extends ResourceObject
@@ -23,6 +24,10 @@ class Todo extends ResourceObject
         return $this;
     }
 
+    /**
+     * @Transactional
+     *
+     */
     public function onPost($todo)
     {
         $statement = $this->db->insert(
