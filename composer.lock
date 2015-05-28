@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1b063a74759497e5250d6b38c58264e2",
+    "hash": "71aa4c5dfd0ebfaef8c2637be37801c0",
     "packages": [
         {
             "name": "aura/cli",
@@ -337,7 +337,7 @@
         },
         {
             "name": "bear/aura-router-module",
-            "version": "1.x-dev",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bearsunday/BEAR.AuraRouterModule.git",
@@ -382,16 +382,16 @@
         },
         {
             "name": "bear/package",
-            "version": "1.0.0-rc.3",
+            "version": "1.0.0-rc.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bearsunday/BEAR.Package.git",
-                "reference": "2aea79a87784be3d9ac5e1921c133fbf85f1cf89"
+                "reference": "916f5ced5105bb583d9644f24b61aa7ee567afef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bearsunday/BEAR.Package/zipball/2aea79a87784be3d9ac5e1921c133fbf85f1cf89",
-                "reference": "2aea79a87784be3d9ac5e1921c133fbf85f1cf89",
+                "url": "https://api.github.com/repos/bearsunday/BEAR.Package/zipball/916f5ced5105bb583d9644f24b61aa7ee567afef",
+                "reference": "916f5ced5105bb583d9644f24b61aa7ee567afef",
                 "shasum": ""
             },
             "require": {
@@ -432,20 +432,20 @@
                 "hypermedia",
                 "rest"
             ],
-            "time": "2015-05-25 16:30:11"
+            "time": "2015-05-28 04:04:10"
         },
         {
             "name": "bear/query-repository",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bearsunday/BEAR.QueryRepository.git",
-                "reference": "5080e5468c0c3d33f74120ac6bf05d9c341e275e"
+                "reference": "835d2fadc743b618010c5e317bbdcacad6e21526"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bearsunday/BEAR.QueryRepository/zipball/5080e5468c0c3d33f74120ac6bf05d9c341e275e",
-                "reference": "5080e5468c0c3d33f74120ac6bf05d9c341e275e",
+                "url": "https://api.github.com/repos/bearsunday/BEAR.QueryRepository/zipball/835d2fadc743b618010c5e317bbdcacad6e21526",
+                "reference": "835d2fadc743b618010c5e317bbdcacad6e21526",
                 "shasum": ""
             },
             "require": {
@@ -472,7 +472,7 @@
                 }
             ],
             "description": "Resource query responsibility segregation",
-            "time": "2015-05-25 08:59:18"
+            "time": "2015-05-28 03:58:21"
         },
         {
             "name": "bear/resource",
