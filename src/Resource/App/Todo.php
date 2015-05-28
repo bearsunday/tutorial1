@@ -28,10 +28,6 @@ class Todo extends ResourceObject
         return $this;
     }
 
-    /**
-     * @Transactional
-     *
-     */
     public function onPost($todo)
     {
         $statement = $this->db->insert(
@@ -43,6 +39,19 @@ class Todo extends ResourceObject
         $this->headers['Location'] = '/todo/?id=' . $statement->lastInsertId();
         // status code
         $this->code = 201;
+
+        return $this;
+    }
+
+
+    public function onPut($id, $todo)
+    {
+        $this->db->update(
+            'todo',
+            ['todo' => $todo],
+            ['id' => (int) $id]
+        );
+        $this->headers['location'] = '/todo/?id=' . $id;
 
         return $this;
     }
