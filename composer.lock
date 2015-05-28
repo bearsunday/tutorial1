@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7f512d20ae9a97180850d0572e89c163",
+    "hash": "1b063a74759497e5250d6b38c58264e2",
     "packages": [
         {
             "name": "aura/cli",
@@ -122,6 +122,126 @@
                 "routing"
             ],
             "time": "2015-03-27 16:04:00"
+        },
+        {
+            "name": "aura/sql",
+            "version": "2.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/auraphp/Aura.Sql.git",
+                "reference": "69ade8ae9920751da9a020eb78f5ed6ee4ac6a88"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/auraphp/Aura.Sql/zipball/69ade8ae9920751da9a020eb78f5ed6ee4ac6a88",
+                "reference": "69ade8ae9920751da9a020eb78f5ed6ee4ac6a88",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "aura": {
+                    "type": "library"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aura\\Sql\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Aura.Sql Contributors",
+                    "homepage": "https://github.com/auraphp/Aura.Sql/contributors"
+                }
+            ],
+            "description": "A PDO extension that provides lazy connections, array quoting, identifier quoting, query profiling, value binding, and convenience methods for common fetch styles. Because it extends PDO, existing code that uses PDO can use this without any changes to the existing code.",
+            "homepage": "https://github.com/auraphp/Aura.Sql",
+            "keywords": [
+                "mysql",
+                "pdo",
+                "pgsql",
+                "postgres",
+                "postgresql",
+                "sql server",
+                "sqlite",
+                "sqlserver",
+                "sqlsrv"
+            ],
+            "time": "2015-03-27 20:02:04"
+        },
+        {
+            "name": "aura/sqlquery",
+            "version": "2.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/auraphp/Aura.SqlQuery.git",
+                "reference": "b1590d76ac42619cb0b6f32b02486915d006982c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/auraphp/Aura.SqlQuery/zipball/b1590d76ac42619cb0b6f32b02486915d006982c",
+                "reference": "b1590d76ac42619cb0b6f32b02486915d006982c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "aura/sql": "Provides an extension to the native PDO along with a profiler and connection locator. Use version 2.*."
+            },
+            "type": "library",
+            "extra": {
+                "aura": {
+                    "type": "library"
+                },
+                "branch-alias": {
+                    "dev-develop-2": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aura\\SqlQuery\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Aura.SqlQuery Contributors",
+                    "homepage": "https://github.com/auraphp/Aura.SqlQuery/contributors"
+                }
+            ],
+            "description": "Object-oriented query builders for MySQL, Postgres, SQLite, and SQLServer; can be used with any database connection library.",
+            "homepage": "https://github.com/auraphp/Aura.SqlQuery",
+            "keywords": [
+                "database",
+                "db",
+                "delete",
+                "dml",
+                "insert",
+                "mysql",
+                "pdo",
+                "pgsql",
+                "postgres",
+                "postgresql",
+                "query",
+                "select",
+                "sql",
+                "sql server",
+                "sqlite",
+                "sqlserver",
+                "update"
+            ],
+            "time": "2015-03-27 20:09:21"
         },
         {
             "name": "aura/web",
@@ -1202,6 +1322,43 @@
                 "code-gen"
             ],
             "time": "2015-05-27 14:59:45"
+        },
+        {
+            "name": "ray/aura-sql-module",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ray-di/Ray.AuraSqlModule.git",
+                "reference": "9d3cd8668d9f17ff9741b41d3654827fb8e9ff44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ray-di/Ray.AuraSqlModule/zipball/9d3cd8668d9f17ff9741b41d3654827fb8e9ff44",
+                "reference": "9d3cd8668d9f17ff9741b41d3654827fb8e9ff44",
+                "shasum": ""
+            },
+            "require": {
+                "aura/sql": "~2.0",
+                "aura/sqlquery": "~2.4",
+                "ray/di": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ray\\AuraSqlModule\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "aura/sql module for Ray.Di",
+            "keywords": [
+                "Aura Sql",
+                "Ray module",
+                "pdo"
+            ],
+            "time": "2015-04-22 03:32:24"
         },
         {
             "name": "ray/cake-database-module",

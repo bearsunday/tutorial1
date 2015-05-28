@@ -7,7 +7,8 @@
         "bear/aura-router-module": "~1.0",
         "monolog/monolog": "~1.0",
         "madapaja/twig-module": "~1.0",
-        "ray/cake-database-module": "~1.0"
+        "ray/cake-database-module": "~1.0",
+        "ray/aura-sql-module": "~1.0"
     },
     "require-dev": {
     },

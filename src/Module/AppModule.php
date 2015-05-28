@@ -6,6 +6,7 @@ use BEAR\Package\PackageModule;
 use MyVendor\Weekday\Annotation\BenchMark;
 use MyVendor\Weekday\Interceptor\BenchMarker;
 use Psr\Log\LoggerInterface;
+use Ray\AuraSqlModule\AuraSqlModule;
 use Ray\CakeDbModule\CakeDbModule;
 use Ray\Di\AbstractModule;
 use BEAR\Package\Provide\Router\AuraRouterModule;
@@ -34,5 +35,8 @@ class AppModule extends AbstractModule
             'database' => dirname(dirname(__DIR__)) . '/var/db/todo.sqlite3'
         ];
         $this->install(new CakeDbModule($dbConfig));
+
+        $dbConfig = 'sqlite:' . dirname(dirname(__DIR__)). '/var/db/post.sqlite3';
+        $this->install(new AuraSqlModule($dbConfig));
     }
 }
