@@ -17,20 +17,15 @@ class IndexTest extends \PHPUnit_Framework_TestCase
 
     public function testOnGet()
     {
-        // resource request
-        $page = $this->resource->get->uri('page://self/index')->withQuery(['name' => 'koriym'])->eager->request();
+        $query = [
+            'year' => '2000',
+            'month' => '1',
+            'day' => '1'
+        ];
+        $page = $this->resource->get->uri('page://self/index')->withQuery($query)->eager->request();
         $this->assertSame(200, $page->code);
-        $this->assertSame('Hello koriym', $page['greeting']);
+        $this->assertSame('{"weekday":"Sat"}', (string) $page['weekday']);
 
         return $page;
-    }
-
-    /**
-     * @depends testOnGet
-     */
-    public function testView($page)
-    {
-        $json = json_decode((string) $page);
-        $this->assertSame('Hello koriym', $json->greeting);
     }
 }
