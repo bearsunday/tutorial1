@@ -470,16 +470,16 @@
         },
         {
             "name": "bear/resource",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bearsunday/BEAR.Resource.git",
-                "reference": "c3a4698097884f8358c371a618d198a05bd976c5"
+                "reference": "d6a29de4769f4e59aadcea587a78b10d71d2e1c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bearsunday/BEAR.Resource/zipball/c3a4698097884f8358c371a618d198a05bd976c5",
-                "reference": "c3a4698097884f8358c371a618d198a05bd976c5",
+                "url": "https://api.github.com/repos/bearsunday/BEAR.Resource/zipball/d6a29de4769f4e59aadcea587a78b10d71d2e1c8",
+                "reference": "d6a29de4769f4e59aadcea587a78b10d71d2e1c8",
                 "shasum": ""
             },
             "require": {
@@ -520,7 +520,7 @@
                 "protocol",
                 "rest"
             ],
-            "time": "2015-09-19 18:27:07"
+            "time": "2015-10-05 17:44:42"
         },
         {
             "name": "bear/sunday",
@@ -576,16 +576,16 @@
         },
         {
             "name": "cakephp/core",
-            "version": "3.0.13",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/core.git",
-                "reference": "2889cb0959016eab84965c0cf5eaf4372493ff34"
+                "reference": "d6bb92aa7c0d0be33d170630e1fef7a9e31cd6b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/core/zipball/2889cb0959016eab84965c0cf5eaf4372493ff34",
-                "reference": "2889cb0959016eab84965c0cf5eaf4372493ff34",
+                "url": "https://api.github.com/repos/cakephp/core/zipball/d6bb92aa7c0d0be33d170630e1fef7a9e31cd6b3",
+                "reference": "d6bb92aa7c0d0be33d170630e1fef7a9e31cd6b3",
                 "shasum": ""
             },
             "require": {
@@ -611,20 +611,20 @@
                 }
             ],
             "description": "CakePHP Framework Core classes",
-            "time": "2015-07-21 06:30:44"
+            "time": "2015-09-20 01:52:46"
         },
         {
             "name": "cakephp/database",
-            "version": "3.0.13",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/database.git",
-                "reference": "e6cfb48792592707d1fa918a4be06fbbe3a15faf"
+                "reference": "2ab8a87ca327b8c202c8b4d91cbb818138f2c1a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/database/zipball/e6cfb48792592707d1fa918a4be06fbbe3a15faf",
-                "reference": "e6cfb48792592707d1fa918a4be06fbbe3a15faf",
+                "url": "https://api.github.com/repos/cakephp/database/zipball/2ab8a87ca327b8c202c8b4d91cbb818138f2c1a8",
+                "reference": "2ab8a87ca327b8c202c8b4d91cbb818138f2c1a8",
                 "shasum": ""
             },
             "require": {
@@ -651,20 +651,20 @@
                 }
             ],
             "description": "Flexible and powerful Database abstraction library with a familiar PDO-like API",
-            "time": "2015-08-31 19:19:50"
+            "time": "2015-09-20 01:52:46"
         },
         {
             "name": "cakephp/utility",
-            "version": "3.0.13",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/utility.git",
-                "reference": "4d16e1fb52d62bef3ee2cba618718769d70653cf"
+                "reference": "3b17514cf8272ad92809b9f55e2f005b2cda2370"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/utility/zipball/4d16e1fb52d62bef3ee2cba618718769d70653cf",
-                "reference": "4d16e1fb52d62bef3ee2cba618718769d70653cf",
+                "url": "https://api.github.com/repos/cakephp/utility/zipball/3b17514cf8272ad92809b9f55e2f005b2cda2370",
+                "reference": "3b17514cf8272ad92809b9f55e2f005b2cda2370",
                 "shasum": ""
             },
             "type": "library",
@@ -687,7 +687,7 @@
                 }
             ],
             "description": "CakePHP Utility classes such as Inflector, String, Hash, and Security",
-            "time": "2015-07-23 16:38:36"
+            "time": "2015-09-20 01:52:46"
         },
         {
             "name": "doctrine/annotations",
@@ -1403,16 +1403,16 @@
         },
         {
             "name": "ray/compiler",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ray-di/Ray.Compiler.git",
-                "reference": "d34812ab7a2c03cfb7a8319f7888086a8d24e69e"
+                "reference": "605e347e9b0077a13e111f51a5ad964004214b42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ray-di/Ray.Compiler/zipball/d34812ab7a2c03cfb7a8319f7888086a8d24e69e",
-                "reference": "d34812ab7a2c03cfb7a8319f7888086a8d24e69e",
+                "url": "https://api.github.com/repos/ray-di/Ray.Compiler/zipball/605e347e9b0077a13e111f51a5ad964004214b42",
+                "reference": "605e347e9b0077a13e111f51a5ad964004214b42",
                 "shasum": ""
             },
             "require": {
@@ -1437,7 +1437,7 @@
                 "code-gen",
                 "compiler"
             ],
-            "time": "2015-05-26 02:33:24"
+            "time": "2015-09-29 03:34:17"
         },
         {
             "name": "ray/di",
@@ -1570,16 +1570,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.22.1",
+            "version": "v1.22.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "b7fc2469fa009897871fb95b68237286fc54a5ad"
+                "reference": "79249fc8c9ff62e41e217e0c630e2e00bcadda6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/b7fc2469fa009897871fb95b68237286fc54a5ad",
-                "reference": "b7fc2469fa009897871fb95b68237286fc54a5ad",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/79249fc8c9ff62e41e217e0c630e2e00bcadda6a",
+                "reference": "79249fc8c9ff62e41e217e0c630e2e00bcadda6a",
                 "shasum": ""
             },
             "require": {
@@ -1627,7 +1627,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-09-15 06:50:16"
+            "time": "2015-09-22 13:59:32"
         }
     ],
     "packages-dev": [],
