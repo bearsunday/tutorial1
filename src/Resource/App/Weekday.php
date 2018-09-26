@@ -17,6 +17,9 @@ class Weekday extends ResourceObject
         $this->logger = $logger;
     }
 
+    /**
+     * @BenchMark
+     */
     public function onGet(int $year, int $month, int $day) : ResourceObject
     {
         $weekday = \DateTime::createFromFormat('Y-m-d', "$year-$month-$day")->format('D');
