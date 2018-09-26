@@ -4,7 +4,7 @@
     "license": "proprietary",
     "description": "",
     "require": {
-        "php": ">=7.0.0",
+        "php": ">=7.1.0",
         "bear/package": "^1.8.2",
         "josegonzalez/dotenv": "^3.2",
         "bear/aura-router-module": "^2.0"
