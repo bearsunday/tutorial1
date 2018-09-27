@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace MyVendor\Weekday\Resource\Page;
 
 use BEAR\Resource\ResourceInterface;
-use MyVendor\MyProject\Resource\Page\Index;
 use MyVendor\Weekday\Injector;
 use PHPUnit\Framework\TestCase;
 
