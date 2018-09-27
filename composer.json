@@ -8,7 +8,8 @@
         "bear/package": "^1.8.2",
         "josegonzalez/dotenv": "^3.2",
         "bear/aura-router-module": "^2.0",
-        "madapaja/twig-module": "^2.0"
+        "madapaja/twig-module": "^2.0",
+        "ray/cake-database-module": "^1.0"
     },
     "require-dev": {
         "bear/qatools": "^1.5",
