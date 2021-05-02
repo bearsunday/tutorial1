@@ -10,6 +10,7 @@
         "bear/package": "^1.14",
         "bear/resource": "^1.17",
         "bear/sunday": "^1.6",
+        "madapaja/twig-module": "^2.4",
         "ray/aop": "^2.12",
         "ray/di": "^2.14"
     },

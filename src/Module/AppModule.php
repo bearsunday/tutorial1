@@ -12,6 +12,7 @@ use MyVendor\Weekday\Annotation\BenchMark;
 use MyVendor\Weekday\Interceptor\BenchMarker;
 use MyVendor\Weekday\MyLogger;
 use MyVendor\Weekday\MyLoggerInterface;
+use MyVendor\Weekday\Resource\App\Weekday;
 
 use function dirname;
 
@@ -28,6 +29,7 @@ class AppModule extends AbstractAppModule
             $this->matcher->annotatedWith(BenchMark::class), // #[Attribute]と属性の付けられたメソッドに
             [BenchMarker::class],                                           // BenchMarkerインターセプターを適用
         );
+        $this->bind(Weekday::class);
         $this->install(new PackageModule());
     }
 }
