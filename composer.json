@@ -13,6 +13,7 @@
         "bear/sunday": "^1.5",
         "madapaja/twig-module": "^2.0",
         "ray/aop": "^2.10",
+        "ray/aura-sql-module": "^1.10",
         "ray/di": "^2.11"
     },
     "require-dev": {

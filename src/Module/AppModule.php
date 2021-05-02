@@ -12,8 +12,10 @@ use MyVendor\Weekday\Annotation\BenchMark;
 use MyVendor\Weekday\Interceptor\BenchMarker;
 use MyVendor\Weekday\MyLogger;
 use MyVendor\Weekday\MyLoggerInterface;
+use Ray\AuraSqlModule\AuraSqlModule;
 
 use function dirname;
+use function sprintf;
 
 class AppModule extends AbstractAppModule
 {
@@ -29,6 +31,7 @@ class AppModule extends AbstractAppModule
             [BenchMarker::class]                                           // BenchMarkerインターセプターを適用
         );
         $this->install(new HtmlModule());
+        $this->install(new AuraSqlModule(sprintf('sqlite:%s/var/db/todo.sq3', $this->appMeta->appDir)));
         $this->install(new PackageModule());
     }
 }
