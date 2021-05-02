@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7bfcb86619e2615c4b40539db7a2963",
+    "content-hash": "273fb3791bef279e686fa2a414305d76",
     "packages": [
         {
             "name": "aura/cli",
@@ -1748,6 +1748,62 @@
                 "source": "https://github.com/koriym/Koriym.Psr4List/tree/1.0.3"
             },
             "time": "2021-02-13T11:40:16+00:00"
+        },
+        {
+            "name": "madapaja/twig-module",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/madapaja/Madapaja.TwigModule.git",
+                "reference": "1fbf7fef103fe9441710e35717d7db2dd2878459"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/madapaja/Madapaja.TwigModule/zipball/1fbf7fef103fe9441710e35717d7db2dd2878459",
+                "reference": "1fbf7fef103fe9441710e35717d7db2dd2878459",
+                "shasum": ""
+            },
+            "require": {
+                "bear/app-meta": "^1.1",
+                "bear/resource": "^1.15.2",
+                "bear/sunday": "^1.2",
+                "mobiledetect/mobiledetectlib": "^2.7",
+                "php": "^7.3 || ^8.0",
+                "ray/di": "^2.7",
+                "twig/twig": "^2.14"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "^2.6",
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "^2.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Madapaja\\TwigModule\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Koji Iwasaki",
+                    "email": "iwasaki@cresc.com"
+                }
+            ],
+            "description": "BEAR.Sunday Twig adapter module",
+            "keywords": [
+                "BEAR.Sunday",
+                "BEAR.Sunday module",
+                "twig"
+            ],
+            "support": {
+                "issues": "https://github.com/madapaja/Madapaja.TwigModule/issues",
+                "source": "https://github.com/madapaja/Madapaja.TwigModule/tree/2.3.0"
+            },
+            "time": "2021-01-30T06:11:41+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -4117,6 +4173,85 @@
                 }
             ],
             "time": "2021-03-17T17:12:15+00:00"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v2.14.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "0b4ba691fb99ec7952d25deb36c0a83061b93bbf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/0b4ba691fb99ec7952d25deb36c0a83061b93bbf",
+                "reference": "0b4ba691fb99ec7952d25deb36c0a83061b93bbf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-ctype": "^1.8",
+                "symfony/polyfill-mbstring": "^1.3"
+            },
+            "require-dev": {
+                "psr/container": "^1.0",
+                "symfony/phpunit-bridge": "^4.4.9|^5.0.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.14-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                },
+                "psr-4": {
+                    "Twig\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Twig Team",
+                    "role": "Contributors"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "https://twig.symfony.com",
+            "keywords": [
+                "templating"
+            ],
+            "support": {
+                "issues": "https://github.com/twigphp/Twig/issues",
+                "source": "https://github.com/twigphp/Twig/tree/v2.14.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/twig/twig",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-03-10T10:05:55+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

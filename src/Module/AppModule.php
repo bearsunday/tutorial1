@@ -28,6 +28,7 @@ class AppModule extends AbstractAppModule
             $this->matcher->annotatedWith(BenchMark::class), // #[Attribute]と属性の付けられたメソッドに
             [BenchMarker::class]                                           // BenchMarkerインターセプターを適用
         );
+        $this->install(new HtmlModule());
         $this->install(new PackageModule());
     }
 }

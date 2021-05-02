@@ -20,8 +20,8 @@ class IndexTest extends TestCase
 
     public function testOnGet(): void
     {
-        $ro = $this->resource->get('page://self/index', ['name' => 'BEAR.Sunday']);
+        $ro = $this->resource->get('page://self/index', ['year' => '2001', 'month' => '1', 'day' => '1']);
         $this->assertSame(200, $ro->code);
-        $this->assertSame('Hello BEAR.Sunday', $ro->body['greeting']);
+        $this->assertSame('Mon', $ro->body['weekday']);
     }
 }
