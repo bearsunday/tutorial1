@@ -26,7 +26,7 @@ class WeekdayTest extends TestCase
         $this->assertSame('Mon', $ro->body['weekday']);
     }
 
-    public function tesInvalidDateTime(): void
+    public function testInvalidDateTime(): void
     {
         $this->expectException(InvalidDateTimeException::class);
         $this->resource->get('app://self/weekday', ['year' => '-1', 'month' => '1', 'day' => '1']);
