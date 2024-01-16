@@ -8,13 +8,17 @@ use BEAR\Dotenv\Dotenv;
 use BEAR\Package\AbstractAppModule;
 use BEAR\Package\PackageModule;
 use BEAR\Package\Provide\Router\AuraRouterModule;
+use DateTimeImmutable;
+use DateTimeInterface;
 use MyVendor\Weekday\Annotation\BenchMark;
 use MyVendor\Weekday\Interceptor\BenchMarker;
 use MyVendor\Weekday\MyLogger;
 use MyVendor\Weekday\MyLoggerInterface;
 use MyVendor\Weekday\Resource\App\Weekday;
+use Ray\AuraSqlModule\AuraSqlModule;
 
 use function dirname;
+use function sprintf;
 
 class AppModule extends AbstractAppModule
 {
@@ -30,6 +34,8 @@ class AppModule extends AbstractAppModule
             [BenchMarker::class],                                           // BenchMarkerインターセプターを適用
         );
         $this->bind(Weekday::class);
+        $this->bind(DateTimeImmutable::class);
+        $this->install(new AuraSqlModule(sprintf('sqlite:%s/var/db/todo.sqlite3', $this->appMeta->appDir)));
         $this->install(new PackageModule());
     }
 }
