@@ -1,0 +1,35 @@
+name: Continuous Integration
+
+on:
+  push:
+    paths-ignore:
+      - '**.md'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress --no-suggest
+
+      - name: Run test suite
+        run: composer run-script test
+
+      - name: Create directory and initialize SQLite database with table
+        run: |
+          mkdir -p var/db
+          sqlite3 var/db/todo.sqlite3 "CREATE TABLE todo (id INTEGER PRIMARY KEY, todo TEXT, created_at TEXT);"
+
+      - name: Post ang Get todos resource
+        run: |
+          php bin/test.php post '/todos?todo=shopping'
+          php bin/test.php get '/todos?id=1'
