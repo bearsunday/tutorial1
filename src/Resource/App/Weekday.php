@@ -19,7 +19,7 @@ class Weekday extends ResourceObject
     #[BenchMark]
     public function onGet(int $year, int $month, int $day): static
     {
-        $dateTime = (new DateTimeImmutable())->createFromFormat('Y-m-d', "$year-$month-$day");
+        $dateTime = DateTimeImmutable::createFromFormat('Y-m-d', "$year-$month-$day");
         if (! $dateTime instanceof DateTimeImmutable) {
             throw new InvalidDateTimeException("$year-$month-$day");
         }
