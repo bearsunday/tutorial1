@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace MyVendor\Weekday\Module;
 
+use DateTimeImmutable;
 use Koriym\EnvJson\EnvJson;
 use BEAR\Package\AbstractAppModule;
 use BEAR\Package\PackageModule;
@@ -12,8 +13,10 @@ use MyVendor\Weekday\Annotation\BenchMark;
 use MyVendor\Weekday\Interceptor\BenchMarker;
 use MyVendor\Weekday\MyLogger;
 use MyVendor\Weekday\MyLoggerInterface;
+use Ray\AuraSqlModule\AuraSqlModule;
 
 use function dirname;
+use function sprintf;
 
 final class AppModule extends AbstractAppModule
 {
@@ -28,6 +31,8 @@ final class AppModule extends AbstractAppModule
             $this->matcher->annotatedWith(BenchMark::class),
             [BenchMarker::class]
         );
+        $this->bind(DateTimeImmutable::class);
+        $this->install(new AuraSqlModule(sprintf('sqlite:%s/var/db/todo.sqlite3', $this->appMeta->appDir)));
         $this->install(new PackageModule());
     }
 }

@@ -12,6 +12,7 @@
         "koriym/env-json": "^1.0",
         "madapaja/twig-module": "^2.0",
         "ray/aop": "^2.12",
+        "ray/aura-sql-module": "^1.17",
         "ray/di": "^2.14"
     },
     "require-dev": {
