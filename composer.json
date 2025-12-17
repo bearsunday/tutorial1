@@ -10,6 +10,7 @@
         "bear/resource": "^1.17",
         "bear/sunday": "^1.6",
         "koriym/env-json": "^1.0",
+        "madapaja/twig-module": "^2.0",
         "ray/aop": "^2.12",
         "ray/di": "^2.14"
     },

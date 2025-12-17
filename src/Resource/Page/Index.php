@@ -5,16 +5,17 @@ declare(strict_types=1);
 namespace MyVendor\Weekday\Resource\Page;
 
 use BEAR\Resource\ResourceObject;
+use BEAR\Resource\Annotation\Embed;
 
 class Index extends ResourceObject
 {
-    /** @var array{greeting: string} */
-    public $body;
-
-    public function onGet(string $name = 'BEAR.Sunday'): static
+    #[Embed(rel:"_self", src: "app://self/weekday{?year,month,day}")]
+    public function onGet(int $year, int $month, int $day): static
     {
-        $this->body = [
-            'greeting' => 'Hello ' . $name,
+        $this->body += [
+            'year' => $year,
+            'month' => $month,
+            'day' => $day,
         ];
 
         return $this;
