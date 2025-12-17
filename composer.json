@@ -5,10 +5,11 @@
     "description": "",
     "require": {
         "php": "^8.4.0",
-        "koriym/env-json": "^1.0",
+        "bear/aura-router-module": "^2.0",
         "bear/package": "^1.14",
         "bear/resource": "^1.17",
         "bear/sunday": "^1.6",
+        "koriym/env-json": "^1.0",
         "ray/aop": "^2.12",
         "ray/di": "^2.14"
     },
