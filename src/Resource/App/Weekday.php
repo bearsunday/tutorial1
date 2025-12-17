@@ -7,9 +7,14 @@ namespace MyVendor\Weekday\Resource\App;
 use BEAR\Resource\ResourceObject;
 use DateTimeImmutable;
 use MyVendor\Weekday\Exception\InvalidDateTimeException;
+use MyVendor\Weekday\MyLoggerInterface;
 
 class Weekday extends ResourceObject
 {
+    public function __construct(public MyLoggerInterface $logger)
+    {
+    }
+
     public function onGet(int $year, int $month, int $day): static
     {
         $dateTime = DateTimeImmutable::createFromFormat('Y-m-d', "$year-$month-$day");
@@ -19,6 +24,7 @@ class Weekday extends ResourceObject
 
         $weekday = $dateTime->format('D');
         $this->body = ['weekday' => $weekday];
+        $this->logger->log("$year-$month-$day {$weekday}");
 
         return $this;
     }
