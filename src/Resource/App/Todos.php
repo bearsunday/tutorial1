@@ -10,6 +10,7 @@ use BEAR\RepositoryModule\Annotation\Cacheable;
 use BEAR\Resource\ResourceObject;
 use DateTimeImmutable;
 use Ray\AuraSqlModule\Annotation\Transactional;
+use RuntimeException;
 
 use function sprintf;
 
@@ -35,10 +36,15 @@ class Todos extends ResourceObject
     {
         $this->pdo->perform(/** @lang SQL */'INSERT INTO todo (todo, created_at) VALUES (:todo, :created_at)', [
             'todo' => $todo,
-            'created_at' => $this->date->format('Y-m-d H:i:s')
+            'created_at' => $this->date->format('Y-m-d H:i:s'),
         ]);
+        $id = $this->pdo->lastInsertId();
+        if ($id === false) {
+            throw new RuntimeException('Failed to get last insert ID');
+        }
+
         $this->code = 201;
-        $this->headers['Location'] = sprintf('/todos?id=%s', $this->pdo->lastInsertId());
+        $this->headers['Location'] = sprintf('/todos?id=%s', $id);
 
         return $this;
     }

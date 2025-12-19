@@ -12,7 +12,7 @@ final class HtmlModule extends AbstractModule
 {
     protected function configure(): void
     {
-        $this->install(new TwigModule);
-        $this->install(new TwigErrorPageModule);
+        $this->install(new TwigModule());
+        $this->install(new TwigErrorPageModule());
     }
 }

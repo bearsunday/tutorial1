@@ -18,11 +18,6 @@
     <!-- suppress -->
     <issueHandlers>
         <MissingConstructor errorLevel="suppress" />
-        <NonInvariantDocblockPropertyType>
-            <errorLevel type="suppress">
-                <directory name="src/Resource"/>
-            </errorLevel>
-        </NonInvariantDocblockPropertyType>
         <PropertyNotSetInConstructor>
             <errorLevel type="suppress">
                 <directory name="src/Resource"/>

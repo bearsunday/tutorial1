@@ -13,8 +13,7 @@ use function assert;
 
 class IndexTest extends TestCase
 {
-    /** @var ResourceInterface */
-    private $resource;
+    private ResourceInterface $resource;
 
     protected function setUp(): void
     {
@@ -24,9 +23,15 @@ class IndexTest extends TestCase
 
     public function testOnGet(): void
     {
-        $ro = $this->resource->get('page://self/index', ['name' => 'BEAR.Sunday']);
+        $ro = $this->resource->get('page://self/index', [
+            'year' => 2024,
+            'month' => 1,
+            'day' => 1,
+        ]);
         assert($ro instanceof Index);
         $this->assertSame(200, $ro->code);
-        $this->assertSame('Hello BEAR.Sunday', $ro->body['greeting']);
+        $this->assertSame(2024, $ro->body['year']);
+        $this->assertSame(1, $ro->body['month']);
+        $this->assertSame(1, $ro->body['day']);
     }
 }

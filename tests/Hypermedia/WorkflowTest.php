@@ -23,7 +23,11 @@ class WorkflowTest extends TestCase
 
     public function testIndex(): ResourceObject
     {
-        $index = $this->resource->get('/index');
+        $index = $this->resource->get('/index', [
+            'year' => 2024,
+            'month' => 1,
+            'day' => 1,
+        ]);
         $this->assertSame(200, $index->code);
 
         return $index;
